@@ -32,7 +32,7 @@ public int deQueue()
 int data=-1;
 if (isEmpty())
 {
-System.out.println("Queue is Underflow. No elements to be deleted in Empty");
+System.out.println("Queue is Underflow. No elements to be deleted in Empty Queue");
 }
 else
 {
@@ -74,14 +74,13 @@ q.enQueue(i);
     q.display();
     System.out.println("Do you want to Dequeue the Queue(y/n):");
      ch=sc.next().charAt(0);
-ch=sc.next().charAt(0);
 if(ch=='y')
 {
 do{
 data=q.deQueue();
 if(data!=-1)
 {
-System.out.println("Deleted Element is:+data");
+System.out.println("Deleted Element is:"+data);
 System.out.println("After Dequeue");
 q.display();
 }
@@ -92,6 +91,3 @@ ch=sc.next().charAt(0);
 }
 }
 }
-
-
-
